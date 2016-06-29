@@ -10,7 +10,7 @@ permalink: /notes/
   {% for post in site.posts %}
     {% if post.categories contains 'notes' %}
     <li>
-      <a href="{{ post.url }}">-rw-r--r-- 1 root root {{ post.date  | date: "%B %d, %Y %H:%M" }}<span>{{ post.title }}</span></a>
+      <a href="{{site.baseurl}}/{{ post.url }}">-rw-r--r-- 1 root root {{ post.date  | date: "%B %d, %Y %H:%M" }}<span>{{ post.title }}</span></a>
     </li>
     {% endif %}
   {% endfor %}

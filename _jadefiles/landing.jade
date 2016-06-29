@@ -3,11 +3,11 @@ h2 ls -lt
 hr
 {% for post in site.posts limit:5 %}
 .content
-  a.post-title(href="{{ post.url }}"){{ post.title }}
+  a.post-title(href="{{site.baseurl}}/{{ post.url }}"){{ post.title }}
     span.post-date  | | {{ post.date | date: "%B %d, %Y" }}
   {{ post.content | split:'<!--break-->' | first }}
   {% if post.content contains '<!--break-->' %}
-  a.read-more(href="{{ post.url }}") ..Leer más
+  a.read-more(href="{{site.baseurl}}/{{ post.url }}") ..Leer más
   {% endif %}
   .spacer
     .line
