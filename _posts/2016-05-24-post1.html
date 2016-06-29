@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Post in Categories blog"
+date:   2016-05-24 18:03:03 -0300
+categories: blog
+---
+<h2 class="note-title"> {{ page.title }} <p> {{ page.date | date: "%B %d, %Y" }}</p>
+</h2>
+
+<h3>Test some code</h3>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil iure illum nisi debitis, voluptatum rem temporibus autem. Temporibus quod placeat inventore excepturi iure molestiae ex ducimus deleniti harum!
+</p>
+
+<figure class="lineno-container">
+{% highlight python linenos %}
+def fib(n):
+ a,b = 1,1
+ for i in range(n-1):
+  a,b = b,a+b
+ return a
+print fib(5)
+{% endhighlight %}
+</figure>
+<!--break-->
+<figure class="lineno-container">
+{% highlight js linenos %}
+var recursive = function(n) {
+    if(n <= 2) {
+        return 1;
+    } else {
+        return this.recursive(n - 1) + this.recursive(n - 2);
+    }
+};
+{% endhighlight %}
+<figcaption>Codigo Javascript de prueba</figcaption>
+</figure>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+</p>

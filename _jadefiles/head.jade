@@ -1,0 +1,26 @@
+head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      title
+        | {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
+      meta(name='description', content='')
+      meta(name='author', content='VCarulla')
+      meta(name='keywords', content='')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      // ** BEGIN FAVICONS SOLUTION **
+      // For IE 9 and below. ICO should be 32x32 pixels in size
+      //if IE
+        link(rel='shortcut icon', href='path/to/favicon.ico')
+      // Touch Icons - iOS and Android 2.1+ 180x180 pixels in size.
+      link(rel='apple-touch-icon-precomposed', href='apple-touch-icon-precomposed.png')
+      // Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size.
+      link(rel='icon', href='path/to/favicon.png')
+      // ** END FAVICONS SOLUTION **
+      // ** BEGIN STYLESHEETS **
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', async='')
+      link(rel='stylesheet', href="{{ site.baseurl }}/assets/css/main.css")
+      // ** END STYLESHEETS **
+      // ** BEGING SCRIPTS **
+      // see footer
+      noscript Oh.. No! Algunos elementos del sitio necesitan JS para funcionar. 
+      // ** END SCRIPTS **

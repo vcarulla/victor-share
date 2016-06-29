@@ -1,0 +1,80 @@
+section.maincontent
+    display: block
+    text-align: center
+    max-width: 930px
+    margin: 0 auto
+    padding: 30px 50px
+    border-radius: 5px
+    background: lighten($baby, 15%)
+    color: $mint
+    box-shadow: 3px 5px 15px rgba(0,0,0,.2)
+    h2
+      color: $mint
+    .note-title
+      text-transform: uppercase
+      font-size: 2.5em
+    .content
+      margin: 30px 60px
+      .post-title
+        color: whitesmoke
+        transition: .2s all ease-in-out
+        &:hover
+          color: white
+          text-shadow: 1px 1px rgba(245, 245, 245, 0.29)
+        .post-date
+          color: $mint
+      .read-more
+        color: $mint
+        font-weight: bold
+        font-size: 1rem
+        transition: .2s all ease-in-out
+        &:hover
+          text-shadow: 1px 1px rgba(10, 26, 26, 0.32)
+
+    .notes
+      text-align: left
+      max-width: 700px
+      margin: 0 auto
+      font-size: 1rem
+      li
+        &:hover
+          background-color: $baby
+        a
+        span
+          float: right
+
+    .spacer
+      margin: 15px 0
+      .line
+        width: 50%
+        margin: 0 auto
+        height: 1px
+        background: whitesmoke
+
+    img
+      display: block
+      margin: 0 auto
+      padding-bottom: 0
+
+@media (max-width: 700px)
+  section.maincontent
+    padding: 15px 25px
+    h2
+      text-align: center
+    .content
+      text-align: left
+      margin: 15px 30px
+      .post-title, .read-more
+        text-align: center
+        display: block
+
+@media (max-width: 500px)
+  section.maincontent .notes
+    ul
+      padding: 0
+      li a
+      text-align: center
+      font-size: 0px
+      span
+        float: none
+        font-size: 1rem

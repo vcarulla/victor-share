@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Post on categories notes"
+date:   2016-06-24 18:03:03 -0300
+categories: notes
+tag: Test
+published: true
+---
+<h2 class="note-title"> {{ page.title }} <p> {{ page.date | date: "%B %d, %Y" }}</p>
+</h2>
+
+<img src="http://fillmurray.com/300/300" alt="" />
+<br>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil iure illum nisi debitis, voluptatum rem temporibus autem. Temporibus quod placeat inventore excepturi iure molestiae ex ducimus deleniti harum!
+</p>
+<!--break-->
+<figure class="lineno-container">
+{% highlight js linenos %}
+var recursive = function(n) {
+  if(n <= 2) {
+    return 1;
+  } else {
+    return this.recursive(n - 1) + this.recursive(n - 2);
+  }
+};
+{% endhighlight %}
+<figcaption>Codigo Javascript de prueba</figcaption>
+</figure>
+
+<figure class="lineno-container">
+{% highlight bash linenos %}
+sudo vim /etc/modprobe.d/alsa-base.conf
+sudo vim /etc/pulse/daemon.conf
+
+if [ ${mac} -eq 1 ]
+then
+	echo "- Macchanger ON :)  "
+	ifconfig $ifc down
+	sleep 5
+	macchanger -a $ifc
+	sleep 5
+	ifconfig $ifc up
+	sleep 5
+else
+	echo "- Macchanger OFF :( - "
+fi
+
+ip1=$(ip -f inet addr show dev $ifc | sed -n 's/^ *inet *\([.0-9]*\).*/\1/p' | awk -F. ' {print $1"."$2"."$3"."} ' )
+ip2=${ip1}${range}
+echo ""
+echo "- The IP The network ip is: ${ip2} -"
+echo ""
+	echo 1 > /sys/class/gpio/gpio27/value
+{% endhighlight %}
+<figcaption>Codigo Bash del NmaPi</figcaption>
+</figure>

@@ -1,0 +1,18 @@
+---
+layout: primary
+title:  Anotaciones
+permalink: /notes/
+---
+<h2>echo | ls -lt anotaciones/* <p>(Ayudas para tener a mano)</p></h2>
+
+<div class="notes">
+  <ul>
+  {% for post in site.posts %}
+    {% if post.categories contains 'notes' %}
+    <li>
+      <a href="{{ post.url }}">-rw-r--r-- 1 root root {{ post.date  | date: "%B %d, %Y %H:%M" }}<span>{{ post.title }}</span></a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>

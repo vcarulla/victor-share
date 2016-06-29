@@ -1,0 +1,18 @@
+---
+layout: primary
+title:  Blog
+permalink: /blog/
+---
+<h2>echo | ls -lt blog/* <p>(Algun articulo..)</p> </h2>
+
+<div class="notes">
+  <ul>
+  {% for post in site.posts %}
+    {% if post.categories contains 'blog' %}
+    <li>
+      <a href="{{ post.url }}">-rw-r--r-- 1 root root {{ post.date  | date: "%B %d, %Y %H:%M" }}<span>{{ post.title }}</span></a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>

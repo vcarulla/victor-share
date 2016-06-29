@@ -1,0 +1,43 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: [victor@share]
+description: Un sitio mas, pero mio.
+baseurl: "/victor-share" # the subpath of your site, e.g. /blog
+url: "vcarulla.git-hub.io" # the base hostname & protocol for your site
+twitter_username: "@victor_carulla"
+github_username:  vcarulla
+name: Carulla Victor
+
+# Handling Reading
+encoding: "utf-8"
+include: [
+  "pages"
+]
+exclude: [
+  "assets/_src/",
+  "node_modules",
+  "bower.json",
+  "gulpfile.js",
+  "package.json",
+  "README.md"
+]
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+
+#Outputing
+permalink: pretty
+timezone: America/Argentina/Buenos_Aires

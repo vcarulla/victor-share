@@ -1,0 +1,17 @@
+---
+layout: primary
+title: 404
+---
+
+<h3>UPSS! No Existe esta pagina</h3>
+<p>
+  Pero te tal vez te interese alguna de estas
+</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
