@@ -86,6 +86,31 @@ strong {
 ul {
   list-style-type: none; }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0; }
+
+.home-wrap {
+  display: block; }
+  .home-wrap .flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .home-wrap .flex--center {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .home-wrap .flex--space-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .home-wrap .order-first {
+    -ms-flex-order: -1;
+        order: -1; }
+
+img {
+  max-width: 100%; }
+
 .home-cta {
   font-size: 16px;
   font-weight: bold;
@@ -341,6 +366,17 @@ section.maincontent {
     margin: 0 auto;
     padding-bottom: 0; }
 
+.social-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+:first-child {
+  margin-right: 5px; }
+
 @media (max-width: 700px) {
   section.maincontent {
     padding: 15px 25px; }
@@ -351,16 +387,20 @@ section.maincontent {
       margin: 15px 30px; }
       section.maincontent .content .post-title, section.maincontent .content .read-more {
         text-align: center;
-        display: block; } }
+        display: block; }
+    section.maincontent .notes {
+      font-size: .8rem; } }
 
 @media (max-width: 500px) {
-  section.maincontent .notes ul {
-    padding: 0;
-    text-align: center;
-    font-size: 0px; }
-    section.maincontent .notes ul span {
-      float: none;
-      font-size: 1rem; } }
+  section.maincontent .notes {
+    font-size: 1rem; }
+    section.maincontent .notes ul {
+      padding: 0;
+      text-align: center;
+      font-size: 0px; }
+      section.maincontent .notes ul span {
+        float: none;
+        font-size: 1rem; } }
 
 section.footer footer {
   text-align: center;
@@ -393,28 +433,3 @@ section.footer footer {
         color: #1DA1F2; }
       section.footer footer .social a i {
         padding: 0 5px; }
-
-body {
-  overflow-x: hidden;
-  width: 100vw;
-  margin: 0; }
-
-.home-wrap {
-  display: block; }
-  .home-wrap .flex {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-  .home-wrap .flex--center {
-    -ms-flex-pack: center;
-        justify-content: center; }
-  .home-wrap .flex--space-around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-  .home-wrap .order-first {
-    -ms-flex-order: -1;
-        order: -1; }
-
-img {
-  max-width: 100%; }

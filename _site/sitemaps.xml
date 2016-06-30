@@ -1,0 +1,113 @@
+<!-- http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/ -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/notes/2016/06/24/post2/</loc>
+      
+        <lastmod>2016-06-24T18:03:03-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/blog/2016/05/24/post1/</loc>
+      
+        <lastmod>2016-05-24T18:03:03-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/pages/404/</loc>
+      
+        <lastmod>2016-06-30T14:36:18-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/blog/</loc>
+      
+        <lastmod>2016-06-30T14:36:18-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/contact/</loc>
+      
+        <lastmod>2016-06-30T14:36:18-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/</loc>
+      
+        <lastmod>2016-06-30T14:36:18-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>vcarulla.git-hub.io/notes/</loc>
+      
+        <lastmod>2016-06-30T14:36:18-03:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+</urlset>

@@ -64,7 +64,9 @@ gulp.task('uglify', function() {
      * and put first in this list to concatenate in just one file.
      * 'assets/_src/bower_components/jquery/dist/jquery.js',
      */
-    'assets/_src/js/functions.js'
+    'assets/_src/js/jquery-3.0.0.min.js',
+    'assets/_src/js/cform.js',
+    'assets/_src/js/main.js'
   ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())

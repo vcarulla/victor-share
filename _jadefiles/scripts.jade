@@ -2,9 +2,11 @@ link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/
 link(rel='stylesheet', href="{{ site.baseurl }}/assets/css/main.css" onload="if(media!='all')media='all'")
 noscript('link(rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css")')
 // LOAD JQUERY U OTHER SCRIPT FROM SVN, IF NOT LOAD TAKE THIS FROM LOCAL
+link(rel='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js')
+script(id="dsq-count-scr" src="//victorshare.disqus.com/count.js" async)
 //- script(type='text/javascript').
-//-   function downloadJSAtOnload(){var d=document.createElement("script");d.src="assets/js/jquery-migrate-3.0.0.js",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
-
+//-   function downloadJSAtOnload(){var d=document.createElement("script");d.src="{{ site.baseurl }}/assets/js/scripts.min.js",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+script(type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.min.js")
 // LOAD GOOLE-ANALYTICS
 //- script(type='text/javascript').
 //-   var _gaq = _gaq || [];
