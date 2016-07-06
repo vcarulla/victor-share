@@ -111,6 +111,23 @@ body {
 img {
   max-width: 100%; }
 
+.contact form input.name, .contact form input.mail {
+  -ms-flex: 1 0 50%;
+      flex: 1 0 50%;
+  height: 50px;
+  font-size: 16px;
+  text-indent: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 3px 0; }
+
+.contact form textarea.message {
+  -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+  font-size: 16px;
+  text-indent: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 3px 0; }
+
 .home-cta {
   font-size: 16px;
   font-weight: bold;
@@ -121,8 +138,12 @@ img {
   transition: all .15s ease-in-out;
   text-align: center;
   border-radius: 5px;
-  background: white;
-  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2); }
+  background: #89b5b5;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Ubuntu', sans-serif;
+  -ms-flex: 1;
+      flex: 1;
+  margin-top: 3px; }
   .home-cta:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); }
 
@@ -401,6 +422,36 @@ section.maincontent {
       section.maincontent .notes ul span {
         float: none;
         font-size: 1rem; } }
+
+.main-contact {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .main-contact :first-child {
+    margin: 0 5px; }
+  .main-contact .linkedin {
+    -ms-flex: 1;
+        flex: 1; }
+  .main-contact .contact {
+    -ms-flex: 2;
+        flex: 2;
+    max-width: 100%; }
+    .main-contact .contact form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .main-contact .contact form :first-child {
+        margin-right: 0px; }
 
 section.footer footer {
   text-align: center;
