@@ -7,8 +7,5 @@ Just run:
 $ gulp
 ```
 
-More info:
-[shakyShane]
-
 [victor-share]: <https://vcarulla.github.io/victor-share/>
 [shakyShane]: <https://github.com/shakyShane/jekyll-gulp-sass-browser-sync>
