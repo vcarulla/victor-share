@@ -12,10 +12,6 @@ baseurl: "/victor-share" # the subpath of your site, e.g. /blog
 url: "vcarulla.git-hub.io" # the base hostname & protocol for your site
 twitter_username: "@victor_carulla"
 github_username:  vcarulla
-linkedin_username: vcarulla
-google_plus_username: "+CarullaVictor"
-facebook_app_id: 801586223310187
-disqus_account: victorshare
 name: Carulla Victor
 
 

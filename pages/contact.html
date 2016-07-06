@@ -7,7 +7,8 @@ permalink: /contact/
 
 <form action="https://formspree.io/carulla.victor@gmail.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+    <input type="text" name="name"  placeholder="Tu nombre" required autocomplete="name">
+    <input type="email" name="_replyto"  placeholder="name@example.com" required autocomplete="email">
+    <textarea name="message" rows="8" cols="40" placeholder="Tu mensaje" required></textarea>
+    <input type="submit" value="Send" required>
 </form>
