@@ -8,8 +8,8 @@
 # Site settings
 title: [victor@share]
 description: Un sitio mas, pero mio.
-# baseurl: "/victor-share" # the subpath of your site, e.g. /blog
-# url: "vcarulla.git-hub.io" # the base hostname & protocol for your site
+baseurl: "/victor-share" # the subpath of your site, e.g. /blog
+url: "vcarulla.git-hub.io" # the base hostname & protocol for your site
 twitter_username: "@victor_carulla"
 github_username:  vcarulla
 name: Carulla Victor
