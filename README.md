@@ -2,7 +2,10 @@
 ###Just a Simple Blog created in Jekyll
 
 
-Just run: 
+Just run:
+```sh
+$ npm update
+```
 ```sh
 $ gulp
 ```
