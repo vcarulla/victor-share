@@ -13,10 +13,16 @@ sitemap:
 ---
 <h2>
   {{ page.title }}
-  <p> {{ page.date | date: "%B %d, %Y" }}</p>
+  <p itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}"> {{ page.date | date: "%B %d, %Y" }}</p>
 </h2>
 
-<img src="http://fillmurray.com/300/300" alt="" />
+<figure>
+  <picture>
+    <source srcset="http://fillmurray.com/960/440 1x, http://fillmurray.com/1920/880 2x" media="(min-width: 600px)">
+    <img itemprop="image" src="http://fillmurray.com/1920/880" alt="" />
+  </picture>
+</figure>
+
 <br>
 <p>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil iure illum nisi debitis, voluptatum rem temporibus autem. Temporibus quod placeat inventore excepturi iure molestiae ex ducimus deleniti harum!
